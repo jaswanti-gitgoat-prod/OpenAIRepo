@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- CVE-2020-11008: Prototype pollution in Newtonsoft.Json -->
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+
+    <!-- CVE-2018-0787: Directory traversal in Microsoft.Data.OData -->
+    <PackageReference Include="Microsoft.Data.OData" Version="5.6.4" />
+
+    <!-- CVE-2022-25879: Vulnerability in RestSharp (SSRF) -->
+    <PackageReference Include="RestSharp" Version="106.11.7" />
+
+    <!-- CVE-2020-7662: Path Traversal in SharpZipLib -->
+    <PackageReference Include="SharpZipLib" Version="1.2.0" />
+
+    <!-- CVE-2020-15250: Command injection in Grpc.Tools -->
+    <PackageReference Include="Grpc.Tools" Version="2.28.1" />
+  </ItemGroup>
+
+</Project>
